@@ -12,7 +12,7 @@
   <meta name="twitter:title" content="SALO STORE — Game Tools" data-i18n-attr="content:meta.title">
   <meta name="twitter:description" content="Clear plans, quick access, direct support." data-i18n-attr="content:meta.ogDescription">
   <title data-i18n="meta.title">SALO STORE — Game Tools</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2308090b'/%3E%3Cpath d='M48 18H25c-6 0-9 4-9 9v3c0 5 3 8 8 9l16 3c1.5 .3 2 1 2 2.5V47c0 1.5-.8 2.5-2.5 2.5H16v8h25c6 0 9-4 9-10v-2c0-5-3-8-8-9l-16-3c-1.5-.3-2-.8-2-2v-2c0-1.5.8-2.5 2.5-2.5H48z' fill='%23a7f542'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2308090b'/%3E%3Cpath d='M48 18H25c-6 0-9 4-9 9v10c0 6 3 9 9 9h23c2 0 4-2 4-4V22c0-2-2-4-4-4Zm-9 12-9 6V24l9 6Zm-12-7v12l-8-6 8-6Z' fill='%23a7f542'/%3E%3C/svg%3E">
   <script>
     (() => {
       const root = document.documentElement;
@@ -32,6 +32,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="promo-bar" role="status" aria-live="polite">
+    <div class="container promo-bar-inner">
+      <span class="promo-label" data-i18n="promoBar.label">Telegram support</span>
+      <span class="promo-divider" aria-hidden="true"></span>
+      <span data-i18n="promoBar.text">Fast activation · 24/7 access · direct support</span>
+    </div>
+  </div>
+
   <a class="skip-link" href="#main" data-i18n="aria.skip">Skip to content</a>
   <canvas class="particle-canvas" aria-hidden="true"></canvas>
   <div class="atmosphere" aria-hidden="true">
@@ -83,6 +91,11 @@
           <a class="btn primary" href="#products"><span data-i18n="hero.shop">Explore products</span><span class="btn-arrow" aria-hidden="true">↗</span></a>
           <a class="btn ghost" href="#how-it-works"><span class="play-icon" aria-hidden="true">▶</span><span data-i18n="hero.how">How does it work?</span></a>
         </div>
+        <div class="trust-strip hero-step" aria-label="Store trust indicators" data-i18n-attr="aria-label:trust.aria">
+          <div class="trust-item"><span class="trust-dot"></span><span data-i18n="trust.instant">Instant access</span></div>
+          <div class="trust-item"><span class="trust-dot"></span><span data-i18n="trust.support">Direct support</span></div>
+          <div class="trust-item"><span class="trust-dot"></span><span data-i18n="trust.secure">Secure checkout</span></div>
+        </div>
         <div class="stats hero-step" data-stagger>
           <div class="stat" data-reveal><strong data-count-to="24" data-count-suffix="/7">24/7</strong><span data-i18n="hero.statOrders">ORDER ACCESS</span></div>
           <div class="stat" data-reveal><strong data-i18n="hero.fastValue">FAST</strong><span data-i18n="hero.statDelivery">DELIVERY</span></div>
@@ -112,7 +125,7 @@
             </div>
             <div class="progress-label"><span data-i18n="terminal.capacity">SYSTEM SIGNAL</span><strong>78%</strong></div>
             <div class="progress" aria-label="Decorative interface progress indicator" data-i18n-attr="aria-label:terminal.progress"><span></span></div>
-            <div class="terminal-footer"><span class="terminal-prompt">&gt;_</span><span data-i18n="terminal.ready">All systems operational</span><span class="terminal-footer-code">0x7A&nbsp; / &nbsp;READY</span></div>
+            <div class="terminal-footer"><span class="terminal-prompt">&gt;_</span><span data-i18n="terminal.ready">All systems operational</span><span class="terminal-footer-code">0x7A&nbsp; / &nbsp;SAFE</span></div>
           </div>
           <div class="terminal-scan" aria-hidden="true"></div>
         </div>
@@ -134,7 +147,7 @@
           <div class="product-copy"><h3 data-plan-name="starter">Starter</h3><p data-i18n="products.starterDescription">24-hour access to try the product.</p></div>
           <div class="price"><span data-plan-price="starter">199 RUB</span><small data-plan-period="starter">/ 1 day</small></div>
           <ul class="plan-features"><li data-i18n="products.quickAccess">Quick access</li><li data-i18n="products.basicSupport">Basic support</li><li data-i18n="products.autoActivation">Guided activation</li></ul>
-          <a class="btn product-buy" data-purchase-plan="starter" data-i18n-attr="aria-label:products.buyStarterLabel" href="https://t.me/pssalo" target="_blank" rel="noopener"><span data-i18n="products.buy">Choose Starter</span><span aria-hidden="true">↗</span></a>
+          <a class="btn product-buy" data-purchase-plan="starter" data-i18n-attr="aria-label:products.buyStarterLabel" href="https://t.me/pssalo" target="_blank" rel="noopener"><span data-i18n="products.buy">Choose this plan</span><span aria-hidden="true">↗</span></a>
           <div class="product-index">SALO / 01</div>
         </article>
         <article class="product featured" data-plan="premium" data-tilt data-tilt-strength="8" data-tilt-shift="8" data-tilt-scale="1.025" data-content-shift="10" data-reveal>
@@ -142,7 +155,7 @@
           <div class="product-copy"><h3 data-plan-name="premium">Premium</h3><p data-i18n="products.premiumDescription">The complete plan for everyday use.</p></div>
           <div class="price"><span data-plan-price="premium">799 RUB</span><small data-plan-period="premium">/ 30 days</small></div>
           <ul class="plan-features"><li data-i18n="products.allFeatures">All product features</li><li data-i18n="products.prioritySupport">Priority support</li><li data-i18n="products.fastUpdates">Fast updates</li></ul>
-          <a class="btn product-buy" data-purchase-plan="premium" data-i18n-attr="aria-label:products.buyPremiumLabel" href="https://t.me/pssalo" target="_blank" rel="noopener"><span data-i18n="products.buy">Choose Premium</span><span aria-hidden="true">↗</span></a>
+          <a class="btn product-buy" data-purchase-plan="premium" data-i18n-attr="aria-label:products.buyPremiumLabel" href="https://t.me/pssalo" target="_blank" rel="noopener"><span data-i18n="products.buy">Choose this plan</span><span aria-hidden="true">↗</span></a>
           <div class="product-index">SALO / 02</div>
         </article>
         <article class="product" data-plan="lifetime" data-tilt data-tilt-strength="7" data-tilt-shift="7" data-tilt-scale="1.018" data-content-shift="9" data-reveal>
@@ -150,7 +163,7 @@
           <div class="product-copy"><h3 data-plan-name="lifetime">Lifetime</h3><p data-i18n="products.lifetimeDescription">One-time purchase. Keep access for good.</p></div>
           <div class="price"><span data-plan-price="lifetime">2,999 RUB</span><small data-plan-period="lifetime">/ forever</small></div>
           <ul class="plan-features"><li data-i18n="products.lifetimeAccess">Lifetime access</li><li data-i18n="products.prioritySupport">Priority support</li><li data-i18n="products.productUpdates">Product updates</li></ul>
-          <a class="btn product-buy" data-purchase-plan="lifetime" data-i18n-attr="aria-label:products.buyLifetimeLabel" href="https://t.me/pssalo" target="_blank" rel="noopener"><span data-i18n="products.buy">Choose Lifetime</span><span aria-hidden="true">↗</span></a>
+          <a class="btn product-buy" data-purchase-plan="lifetime" data-i18n-attr="aria-label:products.buyLifetimeLabel" href="https://t.me/pssalo" target="_blank" rel="noopener"><span data-i18n="products.buy">Choose this plan</span><span aria-hidden="true">↗</span></a>
           <div class="product-index">SALO / 03</div>
         </article>
       </div>
@@ -194,9 +207,9 @@
         <p data-i18n="how.note">From choosing a plan to getting access, our team guides you through the process.</p>
       </div>
       <div class="timeline" data-stagger>
-        <article class="timeline-step" data-reveal><span class="timeline-node">01</span><div><span class="timeline-label" data-i18n="how.stepOneLabel">CHOOSE</span><h3 data-i18n="how.stepOneTitle">Choose a plan</h3><p data-i18n="how.stepOneText">Compare the access periods and choose the plan that suits you.</p></div><span class="timeline-arrow" aria-hidden="true">↗</span></article>
-        <article class="timeline-step" data-reveal><span class="timeline-node">02</span><div><span class="timeline-label" data-i18n="how.stepTwoLabel">CONNECT</span><h3 data-i18n="how.stepTwoTitle">Contact us</h3><p data-i18n="how.stepTwoText">The purchase button opens Telegram with your plan details ready.</p></div><span class="timeline-arrow" aria-hidden="true">↗</span></article>
-        <article class="timeline-step" data-reveal><span class="timeline-node">03</span><div><span class="timeline-label" data-i18n="how.stepThreeLabel">ACTIVATE</span><h3 data-i18n="how.stepThreeTitle">Receive access</h3><p data-i18n="how.stepThreeText">Our team shares payment and activation instructions with you.</p></div><span class="timeline-arrow" aria-hidden="true">↗</span></article>
+        <article class="timeline-step" data-reveal><span class="timeline-node">01</span><div><span class="timeline-label" data-i18n="how.stepOneLabel">CHOOSE</span><h3 data-i18n="how.stepOneTitle">Choose a plan</h3><p data-i18n="how.stepOneText">Compare the access periods and choose the plan that suits you.</p></div><span class="timeline-arrow" aria-hidden="true">→</span></article>
+        <article class="timeline-step" data-reveal><span class="timeline-node">02</span><div><span class="timeline-label" data-i18n="how.stepTwoLabel">CONNECT</span><h3 data-i18n="how.stepTwoTitle">Contact us</h3><p data-i18n="how.stepTwoText">The purchase button opens Telegram with your plan details ready.</p></div><span class="timeline-arrow" aria-hidden="true">→</span></article>
+        <article class="timeline-step" data-reveal><span class="timeline-node">03</span><div><span class="timeline-label" data-i18n="how.stepThreeLabel">ACTIVATE</span><h3 data-i18n="how.stepThreeTitle">Receive access</h3><p data-i18n="how.stepThreeText">Our team shares payment and activation instructions with you.</p></div></article>
       </div>
     </section>
 
@@ -224,7 +237,7 @@
               <span><b data-i18n="showcase.panelPlan">Premium access</b><small data-i18n="showcase.panelDuration">30 days · Full plan</small></span>
               <span class="showcase-plan-status"><i></i><span data-i18n="terminal.online">ONLINE</span></span>
             </div>
-            <div class="showcase-device-meter"><span><i></i></span></div>
+            <div class="showcase-device-meter"><span></span></div>
             <div class="showcase-device-footer"><span data-i18n="showcase.panelFooter">ACCESS READY</span><span>01 / SALO</span></div>
           </div>
           <div class="showcase-float float-a"><span>↗</span><b data-i18n="showcase.floatOne">CLEAR PLANS</b></div>
@@ -241,9 +254,9 @@
         <p data-i18n="standards.note">The details that matter, right where you need them.</p>
       </div>
       <div class="standards-grid" data-stagger>
-        <article class="standard-card" data-reveal><span class="standard-mark">01</span><span class="standard-icon">◉</span><h3 data-i18n="standards.oneTitle">Know what you choose</h3><p data-i18n="standards.oneText">Plan duration and pricing are visible before you start a purchase.</p><span class="standard-bottom" data-i18n="standards.oneTag">TRANSPARENT PLANS</span></article>
-        <article class="standard-card" data-reveal><span class="standard-mark">02</span><span class="standard-icon">↗</span><h3 data-i18n="standards.twoTitle">Reach a real team</h3><p data-i18n="standards.twoText">Questions about a plan go straight to SALO support on Telegram.</p><span class="standard-bottom" data-i18n="standards.twoTag">DIRECT CONTACT</span></article>
-        <article class="standard-card" data-reveal><span class="standard-mark">03</span><span class="standard-icon">⌁</span><h3 data-i18n="standards.threeTitle">Get guided through</h3><p data-i18n="standards.threeText">The team shares the steps for payment and access after you get in touch.</p><span class="standard-bottom" data-i18n="standards.threeTag">HUMAN SUPPORT</span></article>
+        <article class="standard-card" data-reveal><span class="standard-mark">01</span><span class="standard-icon">◉</span><h3 data-i18n="standards.oneTitle">Know what you choose</h3><p data-i18n="standards.oneText">Plan duration and pricing are visible before you start a purchase.</p><div class="standard-bottom" data-i18n="standards.oneTag">TRANSPARENT PLANS</div></article>
+        <article class="standard-card" data-reveal><span class="standard-mark">02</span><span class="standard-icon">↗</span><h3 data-i18n="standards.twoTitle">Reach a real team</h3><p data-i18n="standards.twoText">Questions about a plan go straight to SALO support on Telegram.</p><div class="standard-bottom" data-i18n="standards.twoTag">DIRECT CONTACT</div></article>
+        <article class="standard-card" data-reveal><span class="standard-mark">03</span><span class="standard-icon">⌁</span><h3 data-i18n="standards.threeTitle">Get guided through</h3><p data-i18n="standards.threeText">The team shares the steps for payment and access after you get in touch.</p><div class="standard-bottom" data-i18n="standards.threeTag">HUMAN SUPPORT</div></article>
       </div>
     </section>
 
@@ -284,10 +297,10 @@
         <p data-i18n="footer.blurb">Digital gaming products, with clear plans and support on Telegram.</p>
       </div>
       <div class="footer-column"><b data-i18n="footer.explore">EXPLORE</b><a href="#products" data-i18n="nav.products">Products</a><a href="#features" data-i18n="nav.features">Features</a><a href="#how-it-works" data-i18n="nav.how">How it works</a></div>
-      <div class="footer-column"><b data-i18n="footer.support">SUPPORT</b><a href="#faq" data-i18n="nav.faq">FAQ</a><a href="#contacts" data-i18n="nav.contact">Contact</a><a href="https://t.me/pssalo" target="_blank" rel="noopener">Telegram ↗</a></div>
+      <div class="footer-column"><b data-i18n="footer.support">SUPPORT</b><a href="#faq" data-i18n="nav.faq">FAQ</a><a href="#contacts" data-i18n="nav.contact">Contact</a><a href="https://t.me/pssalo" target="_blank" rel="noopener">Telegram</a></div>
       <a class="footer-up" href="#top" aria-label="Back to top" data-i18n-attr="aria-label:aria.backTop">↑</a>
     </div>
-    <div class="container footer-bottom"><span>© 2026 SALO STORE</span><span data-i18n="footer.caption">DIGITAL ACCESS · HUMAN SUPPORT</span><span><span data-i18n="footer.tagline">MADE FOR PLAY</span> <i>✳</i></span></div>
+    <div class="container footer-bottom"><span>© 2026 SALO STORE</span><span data-i18n="footer.caption">DIGITAL ACCESS · HUMAN SUPPORT</span><span><span data-i18n="footer.tagline">MADE FOR PLAY</span></span></div>
   </footer>
   <script src="script.js"></script>
 </body>
